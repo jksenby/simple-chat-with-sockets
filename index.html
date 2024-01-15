@@ -18,6 +18,10 @@
       integrity="sha384-..."
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/f17f3cc0b9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -25,36 +29,27 @@
       <div
         class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary h-100"
         id="side-bar"
-        style="
-          width: 300px;
-          border-radius: 3px;
-          border-width: 10px;
-          border-style: groove;
-          border-color: aliceblue;
-        "
+        style="width: 25vw"
       >
         <div>
-          <h1 style="text-align: center">Online Users</h1>
-          <hr
-            style="border-width: 3px; border-style: groove; border-color: black"
-          />
+          <h1 style="text-align: center">
+            Online <i class="fa-solid fa-circle" style="color: #00cb03"></i>
+          </h1>
+          <hr style="border: 7px solid #00ff88" />
           <div
             class="list-group list-group-flush border-bottom scrollarea"
             id="user-list"
           ></div>
         </div>
       </div>
-      <div class="container">
-        <div
-          class="flex-grow-1"
-          style="background-image: url(img/wp.pg.jpg); z-index: 100"
-        >
+      <div class="container-fluid">
+        <div class="flex-grow-1" style="background-image: url(img/wp.pg.jpg)">
           <div id="chat-container">
             <ul id="messages" class="p-3"></ul>
           </div>
           <div id="chat">
             <form id="form" action="">
-              <div class="input-group mb-3">
+              <div class="input-group mb-3" style="height: 7vh">
                 <input
                   id="messageInput"
                   autocomplete="off"
